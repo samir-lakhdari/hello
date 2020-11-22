@@ -1,3 +1,4 @@
 FROM alpine:3.12
-COPY hello.sh /
-CMD ["/hello.sh"]
+COPY entrypoint.sh /
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["bonjour"]
