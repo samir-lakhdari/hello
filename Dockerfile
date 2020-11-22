@@ -1,2 +1,3 @@
 FROM alpine:3.12
-CMD ["/bin/sh","-c","echo","bonjour"]
+COPY hello.sh /
+CMD ["/hello.sh"]
